@@ -13,6 +13,15 @@
 		38F4AA4D27C3E24300247752 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38F4AA4B27C3E24300247752 /* Main.storyboard */; };
 		38F4AA4F27C3E24400247752 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38F4AA4E27C3E24400247752 /* Assets.xcassets */; };
 		38F4AA5227C3E24400247752 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38F4AA5027C3E24400247752 /* LaunchScreen.storyboard */; };
+		38F4AA6027C3E34700247752 /* CoreDataModelVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F4AA5A27C3E34700247752 /* CoreDataModelVersion.swift */; };
+		38F4AA6127C3E34700247752 /* CoreDataMigrationStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F4AA5B27C3E34700247752 /* CoreDataMigrationStep.swift */; };
+		38F4AA6227C3E34700247752 /* CoreDataConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F4AA5C27C3E34700247752 /* CoreDataConfig.swift */; };
+		38F4AA6327C3E34700247752 /* CoreDataModelVersionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F4AA5D27C3E34700247752 /* CoreDataModelVersionProvider.swift */; };
+		38F4AA6427C3E34700247752 /* CoreDataMigrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F4AA5E27C3E34700247752 /* CoreDataMigrator.swift */; };
+		38F4AA6527C3E34700247752 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F4AA5F27C3E34700247752 /* CoreDataManager.swift */; };
+		38F4AA6827C3E37300247752 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F4AA6727C3E37300247752 /* Utils.swift */; };
+		38F4AA6D27C3E3C000247752 /* FileManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F4AA6C27C3E3C000247752 /* FileManager+Extension.swift */; };
+		38F4AA6F27C3E3DF00247752 /* NSPersistentStoreCoordinator+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F4AA6E27C3E3DF00247752 /* NSPersistentStoreCoordinator+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +33,15 @@
 		38F4AA4E27C3E24400247752 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		38F4AA5127C3E24400247752 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		38F4AA5327C3E24400247752 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38F4AA5A27C3E34700247752 /* CoreDataModelVersion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataModelVersion.swift; sourceTree = "<group>"; };
+		38F4AA5B27C3E34700247752 /* CoreDataMigrationStep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataMigrationStep.swift; sourceTree = "<group>"; };
+		38F4AA5C27C3E34700247752 /* CoreDataConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataConfig.swift; sourceTree = "<group>"; };
+		38F4AA5D27C3E34700247752 /* CoreDataModelVersionProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataModelVersionProvider.swift; sourceTree = "<group>"; };
+		38F4AA5E27C3E34700247752 /* CoreDataMigrator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataMigrator.swift; sourceTree = "<group>"; };
+		38F4AA5F27C3E34700247752 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		38F4AA6727C3E37300247752 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		38F4AA6C27C3E3C000247752 /* FileManager+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager+Extension.swift"; sourceTree = "<group>"; };
+		38F4AA6E27C3E3DF00247752 /* NSPersistentStoreCoordinator+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSPersistentStoreCoordinator+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +74,9 @@
 		38F4AA4427C3E24300247752 /* iOS-Boilerplates */ = {
 			isa = PBXGroup;
 			children = (
+				38F4AA6927C3E38800247752 /* Extensions */,
+				38F4AA6627C3E35C00247752 /* Utils */,
+				38F4AA5927C3E33500247752 /* CoreData */,
 				38F4AA4527C3E24300247752 /* AppDelegate.swift */,
 				38F4AA4727C3E24300247752 /* SceneDelegate.swift */,
 				38F4AA4927C3E24300247752 /* ViewController.swift */,
@@ -65,6 +86,44 @@
 				38F4AA5327C3E24400247752 /* Info.plist */,
 			);
 			path = "iOS-Boilerplates";
+			sourceTree = "<group>";
+		};
+		38F4AA5927C3E33500247752 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				38F4AA5C27C3E34700247752 /* CoreDataConfig.swift */,
+				38F4AA5F27C3E34700247752 /* CoreDataManager.swift */,
+				38F4AA5A27C3E34700247752 /* CoreDataModelVersion.swift */,
+				38F4AA5D27C3E34700247752 /* CoreDataModelVersionProvider.swift */,
+				38F4AA7027C3E40000247752 /* Migration */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		38F4AA6627C3E35C00247752 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				38F4AA6727C3E37300247752 /* Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		38F4AA6927C3E38800247752 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				38F4AA6C27C3E3C000247752 /* FileManager+Extension.swift */,
+				38F4AA6E27C3E3DF00247752 /* NSPersistentStoreCoordinator+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		38F4AA7027C3E40000247752 /* Migration */ = {
+			isa = PBXGroup;
+			children = (
+				38F4AA5B27C3E34700247752 /* CoreDataMigrationStep.swift */,
+				38F4AA5E27C3E34700247752 /* CoreDataMigrator.swift */,
+			);
+			path = Migration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +197,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38F4AA6D27C3E3C000247752 /* FileManager+Extension.swift in Sources */,
+				38F4AA6327C3E34700247752 /* CoreDataModelVersionProvider.swift in Sources */,
+				38F4AA6F27C3E3DF00247752 /* NSPersistentStoreCoordinator+Extension.swift in Sources */,
+				38F4AA6427C3E34700247752 /* CoreDataMigrator.swift in Sources */,
 				38F4AA4A27C3E24300247752 /* ViewController.swift in Sources */,
 				38F4AA4627C3E24300247752 /* AppDelegate.swift in Sources */,
+				38F4AA6227C3E34700247752 /* CoreDataConfig.swift in Sources */,
+				38F4AA6827C3E37300247752 /* Utils.swift in Sources */,
+				38F4AA6127C3E34700247752 /* CoreDataMigrationStep.swift in Sources */,
+				38F4AA6527C3E34700247752 /* CoreDataManager.swift in Sources */,
 				38F4AA4827C3E24300247752 /* SceneDelegate.swift in Sources */,
+				38F4AA6027C3E34700247752 /* CoreDataModelVersion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
