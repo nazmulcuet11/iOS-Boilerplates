@@ -39,7 +39,6 @@ class CoreDataManager {
                 options: nil
             )
         } catch let error {
-            print(error)
             fatalError("Error configuring persistent store: \(error.localizedDescription)")
         }
 
@@ -47,8 +46,6 @@ class CoreDataManager {
         mainMoc.persistentStoreCoordinator = psc
         // main moc shoud never have any unsaved changes, should only be used for read
         mainMoc.mergePolicy = NSMergePolicy(merge: .rollbackMergePolicyType)
-        
-        print(mainMoc.automaticallyMergesChangesFromParent)
         
         let backgroundMoc = NSManagedObjectContext(concurrencyType: .privateQueueConcurrencyType)
         backgroundMoc.persistentStoreCoordinator = psc

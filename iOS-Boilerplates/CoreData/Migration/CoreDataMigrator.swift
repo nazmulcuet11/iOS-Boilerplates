@@ -36,7 +36,10 @@ class CoreDataMigrator {
         print("MIGRATION: currentVersion: \(currentVersion.number)")
         print("MIGRATION: latestVersion: \(versionProvider.latestVersion.number)")
         
-        return currentVersion < versionProvider.latestVersion
+        let required = currentVersion < versionProvider.latestVersion
+        print("MIGRATION: migration required: \(required)")
+        
+        return required
     }
     
     func migrateStore() {
