@@ -12,6 +12,9 @@
 		38B03CF927C3F0F300F74EAE /* NibBased.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B03CF627C3F0F300F74EAE /* NibBased.swift */; };
 		38B03CFA27C3F0F300F74EAE /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B03CF727C3F0F300F74EAE /* ReusableView.swift */; };
 		38B03CFB27C3F0F300F74EAE /* StoryboardBased.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B03CF827C3F0F300F74EAE /* StoryboardBased.swift */; };
+		38CAB6F727E219320021A062 /* CancellableSubscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CAB6F427E219320021A062 /* CancellableSubscription.swift */; };
+		38CAB6F827E219320021A062 /* SubscribableService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CAB6F527E219320021A062 /* SubscribableService.swift */; };
+		38CAB6F927E219320021A062 /* Weak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CAB6F627E219320021A062 /* Weak.swift */; };
 		38F4AA4627C3E24300247752 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F4AA4527C3E24300247752 /* AppDelegate.swift */; };
 		38F4AA4827C3E24300247752 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F4AA4727C3E24300247752 /* SceneDelegate.swift */; };
 		38F4AA4A27C3E24300247752 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F4AA4927C3E24300247752 /* ViewController.swift */; };
@@ -35,6 +38,9 @@
 		38B03CF627C3F0F300F74EAE /* NibBased.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibBased.swift; sourceTree = "<group>"; };
 		38B03CF727C3F0F300F74EAE /* ReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		38B03CF827C3F0F300F74EAE /* StoryboardBased.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardBased.swift; sourceTree = "<group>"; };
+		38CAB6F427E219320021A062 /* CancellableSubscription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CancellableSubscription.swift; sourceTree = "<group>"; };
+		38CAB6F527E219320021A062 /* SubscribableService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscribableService.swift; sourceTree = "<group>"; };
+		38CAB6F627E219320021A062 /* Weak.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weak.swift; sourceTree = "<group>"; };
 		38F4AA4227C3E24300247752 /* iOS-Boilerplates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Boilerplates.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		38F4AA4527C3E24300247752 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		38F4AA4727C3E24300247752 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +127,9 @@
 		38F4AA6927C3E38800247752 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				38CAB6F427E219320021A062 /* CancellableSubscription.swift */,
+				38CAB6F527E219320021A062 /* SubscribableService.swift */,
+				38CAB6F627E219320021A062 /* Weak.swift */,
 				38B03CF627C3F0F300F74EAE /* NibBased.swift */,
 				38B03CF727C3F0F300F74EAE /* ReusableView.swift */,
 				38B03CF827C3F0F300F74EAE /* StoryboardBased.swift */,
@@ -221,6 +230,7 @@
 				38F4AA4627C3E24300247752 /* AppDelegate.swift in Sources */,
 				38F4AA6227C3E34700247752 /* CoreDataConfig.swift in Sources */,
 				38B03CF527C3F0EB00F74EAE /* UITableView+Convenience.swift in Sources */,
+				38CAB6F727E219320021A062 /* CancellableSubscription.swift in Sources */,
 				38F4AA6827C3E37300247752 /* Utils.swift in Sources */,
 				38B03CFB27C3F0F300F74EAE /* StoryboardBased.swift in Sources */,
 				38F4AA6127C3E34700247752 /* CoreDataMigrationStep.swift in Sources */,
@@ -228,6 +238,8 @@
 				38F4AA6527C3E34700247752 /* CoreDataManager.swift in Sources */,
 				38F4AA4827C3E24300247752 /* SceneDelegate.swift in Sources */,
 				38F4AA6027C3E34700247752 /* CoreDataModelVersion.swift in Sources */,
+				38CAB6F927E219320021A062 /* Weak.swift in Sources */,
+				38CAB6F827E219320021A062 /* SubscribableService.swift in Sources */,
 				38B03CF327C3F0E200F74EAE /* UICollectionView+Convenience.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
